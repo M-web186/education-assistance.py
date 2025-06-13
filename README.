@@ -1,0 +1,37 @@
+# Education Assistance
+
+**Education Assistance** helps students plan their studies and choose learning methods using AI. It makes learning easier by recommending the best strategies for each student.
+
+## Features
+
+- **Personal Study Plans:** AI creates a study plan based on your goals and learning style.
+- **Learning Method Advice:** Get simple tips—visual (videos, diagrams), auditory (audio, discussion), reading/writing, or hands-on activities.
+- **Easy-to-Understand Content:** Get summaries and resources tailored to how you learn best.
+- **Progress Tracking:** See your progress and adjust your plan anytime.
+
+## How It Works
+
+1. Tell the AI your subjects, goals, and how you like to learn.
+2. Get a custom plan and method suggestions (visual, auditory, etc.).
+3. Follow your plan and use suggested resources.
+4. Give feedback so the AI can improve your plan.
+
+## Example
+
+- **Visual:** Watch videos and use diagrams.
+- **Auditory:** Listen to recordings or join discussions.
+- **Kinesthetic:** Do hands-on activities.
+- **Reading/Writing:** Read materials and take notes.
+
+## Accessing This Repository
+
+You can access and use this project by cloning the repository:
+
+```bash
+git clone https://github.com/M-web186/education-assistance.git
+cd education-assistance
+```
+
+---
+
+Start planning your learning the smart way!
