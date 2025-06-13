@@ -1,0 +1,77 @@
+# AI Education Assistant by Maureen Ndinda
+
+def greet_user():
+    print("Welcome to my AI Education Assistant!")
+    name = input("What is your name? ")
+    print(f"Hello {name}, nice to meet you!")
+    return name
+
+def get_learning_preference():
+    print("\n How do you prefer to learn?")
+    print("1. Visual (videos, diagrams)")
+    print("2. Auditory (listening, lectures)")
+    print("3. Reading/Writing")
+    print("4. Hands on practice")
+    choice = input("Enter your choice (1–4): ")
+    preferences = {
+        "1": "Visual – You can use YouTube tutorials and mind maps.",
+        "2": "Auditory – Try podcasts or recorded lectures.",
+        "3": "Reading/Writing – Use textbooks and note-taking.",
+        "4": "Hands on practice – Do practical coding and mini-projects."
+    }
+    return preferences.get(choice, "Invalid choice, try again.")
+
+def suggest_topics():
+    print("\n Choose a subject you're studying:")
+    print("1. Programming")
+    print("2. Computer Maintenance")
+    print("3. Database Management")
+    subject = input("Enter your choice (1–3): ")
+
+    suggestions = {
+        "1": ["Learn Python basics", "Practice loops and functions", "Try small projects like a calculator"],
+        "2": ["Study hardware components", "Learn preventive maintenance", "Practice troubleshooting"],
+        "3": ["Understand SQL basics", "Practice SELECT/INSERT queries", "Design a simple student database"]
+    }
+
+    topics = suggestions.get(subject)
+    if topics:
+        print("Study suggestions:")
+        for t in topics:
+            print(f"- {t}")
+    else:
+        print("Invalid input. Please try again.")
+
+def ask_quiz():
+    print("\n Let's take a short quiz!")
+    score = 0
+
+    q1 = input("1. What keyword is used to define a function in Python? ")
+    if q1.lower() == "def":
+        score += 1
+
+    q2 = input("2. what symbol is ues to comment a line in python? ")
+    if q2 == "#":
+        score += 1
+
+    q3 = input("3. What data structure does Python use for key-value pairs? ")
+    if q3.lower() == "dictionary":
+        score += 1
+
+    print(f"\n You scored {score}/3.")
+    if score == 3:
+        print("Excellent! Keep it up!")
+    elif score == 2:
+        print("Good job! Review the missed question.")
+    else:
+        print("Keep practicing! You’ll get better.")
+
+def main():
+    user = greet_user()
+    print(get_learning_preference())
+    suggest_topics()
+    ask_quiz()
+    print(f"\n Thanks for using the assistant, {user}!  Keep learning!")
+
+if __name__ == "__main__":
+    main()
